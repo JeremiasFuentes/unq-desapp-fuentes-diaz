@@ -3,21 +3,12 @@ package edu.api.model.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import edu.api.model.dto.Crypto;
-import edu.api.model.dto.DollarPrice;
 import edu.api.model.dto.Message;
-import edu.api.model.enums.CryptoName;
 import edu.api.model.service.CryptoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("auth/api")
